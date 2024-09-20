@@ -30,25 +30,29 @@
                 <div class="flex justify-evenly">
                     <!-- <h1>🔥 Welcome to Payooo!</h1>
                     <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p> -->
-                    <button class="btn btn-outline btn-success">Add Money</button>
-                    <button class="btn btn-outline btn-warning">Cash Out</button>
+                    <button id="btn-add-money" class="btn btn-outline btn-success">Add Money</button>
+                    <button id="btn-cash-out" class="btn btn-outline btn-warning">Cash Out</button>
                 </div>
-                <div class="divider"></div>
-                <!-- Add Money part -->
-                <div class="flex justify-center">
+
+                <div id="divider-id" class="divider hidden"></div>
+
+                <!-- Add Money part start -->
+                <div id="add-money-section" class="flex justify-center hidden">
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl flex justify-center">
                         <form class="card-body">
                             <div class="form-control">
                                 <!-- <label class="label">
                                 <span class="label-text">Phone Number</span>
                             </label> -->
-                                <input id="add-money-amount" type="number" placeholder="Amount" class="input input-bordered" required />
+                                <input id="add-money-amount" type="number" placeholder="Add Money Amount"
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <!-- <label class="label">
                                 <span class="label-text">Pin Number</span>
                             </label> -->
-                                <input id="password" type="password" placeholder="Pin" class="input input-bordered" required />
+                                <input id="password" type="password" placeholder="Pin" class="input input-bordered"
+                                    required />
                                 <!-- <label class="label">
                                 <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                             </label> -->
@@ -59,6 +63,36 @@
                         </form>
                     </div>
                 </div>
+                <!-- Add Money part end -->
+
+                <!-- Cash Out part start -->
+                <div id="cash-out-section" class="flex justify-center hidden">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl flex justify-center">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <!-- <label class="label">
+                                <span class="label-text">Phone Number</span>
+                            </label> -->
+                                <input id="cash-out-amount" type="number" placeholder="Cash Out Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <!-- <label class="label">
+                                <span class="label-text">Pin Number</span>
+                            </label> -->
+                                <input id="confirm-password" type="password" placeholder="Pin" class="input input-bordered"
+                                    required />
+                                <!-- <label class="label">
+                                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            </label> -->
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn2-cash-out" class="btn btn-primary">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Cash Out part end -->
 
             </div>
         </section>
@@ -66,6 +100,8 @@
     <footer></footer>
 
     <script src="./js/home.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
 </body>
 
 </html>

@@ -1,21 +1,27 @@
-document.getElementById('btn2-add-money').addEventListener('click', function(event) {
-    event.preventDefault();
+document.getElementById('btn-cash-out').addEventListener('click', function() {
+    // event.preventDefault();
+    // console.log('cash out :(')
 
-    const mainBalance = document.getElementById('main-balance').innerText;
-    // console.log(typeof mainBalance)
-    const addMoneyAmount = document.getElementById('add-money-amount').value;
-    // console.log(typeof addMoneyAmount)
-    const myPassword = document.getElementById('password').value;
+    const dividerId = document.getElementById('divider-id');
+    dividerId.classList.remove('hidden');
 
-    if(myPassword === '1230'){
-        const newBalance = Number(mainBalance) + Number(addMoneyAmount);
-        // mainBalance = parseFloat(mainBalance) + parseFloat(addMoneyAmount);
-        // mainBalance = parseInt(mainBalance) + parseInt(addMoneyAmount);
-        
-        // console.log(newBalance)
+    const cashOutSection = document.getElementById('cash-out-section');
+    cashOutSection.classList.remove('hidden');
 
-        document.getElementById('main-balance').innerText = newBalance;
-    }else{
-        alert('information wrong')
-    }
+    const addMoneySection = document.getElementById('add-money-section');
+    addMoneySection.classList.add('hidden');
+});
+
+document.getElementById('btn-add-money').addEventListener('click', function() {
+    // event.preventDefault();
+    // console.log('cash out :(')
+
+    const dividerId = document.getElementById('divider-id');
+    dividerId.classList.remove('hidden');
+
+    const cashOutSection = document.getElementById('cash-out-section');
+    cashOutSection.classList.add('hidden');
+    
+    const addMoneySection = document.getElementById('add-money-section');
+    addMoneySection.classList.remove('hidden');
 });
