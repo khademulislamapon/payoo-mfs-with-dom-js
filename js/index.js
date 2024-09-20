@@ -8,7 +8,7 @@ document.getElementById('btn-login').addEventListener('click', function(event) {
 
     if(mobileNumber === '01800000000' && pinNumber === '1230'){
         console.log('Yor are logged in');
-        window.location.href = '/home.html';
+        window.location.href = '../home.html';
     }else{
         alert('wrong phone number or pin')
     }
